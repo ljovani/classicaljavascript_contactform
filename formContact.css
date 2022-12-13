@@ -1,0 +1,51 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 9 de dez de 2022, 23:54:24
+    Author     : L
+*/
+
+@import 'https://fonts.googleapis.com/css?family=EB+Garamond';
+
+body{
+    background-color: #EEEEEE;
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+    text-align: center;
+}
+
+fieldset{
+    border: 0px none transparent;
+}
+
+form{
+    border: 1px dashed #DDDDDD;
+    display: inline-block;
+    padding: 20px;
+    text-align: left;
+    width: 50%;
+}
+
+h1{
+    font-family: 'EB Garamond';
+    text-align: center;
+}
+
+input[type="button"],input[type="reset"]{
+    background-color: #DDDDDD;
+    border: 0px none transparent;
+}
+
+input[type="text"], textarea{
+    background-color: #EEEEEE;
+    border: 1px solid #E9E9E9;
+}
+
+h1,input[type="button"],input[type="reset"],input[type="text"],label,p,span{
+    color: white;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>#form #javascript #html</title>
+        <link href="formContact.css" media="screen" rel="stylesheet" type="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="formContact.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>#form #javascript #html</h1>
+            <form action="formContact.html" id="formContact" method="post">
+                <p>*: mandatory</p>
+                <fieldset>
+                    <label>* Name:</label>
+                    <input class="formContactmandatory" id="nameobj" name="name" type="text" onblur="fieldVerification(this);" onfocus="cleanVerification(this);" />
+                    <span id="verificationResultnameobj"></span>
+                </fieldset>
+                <fieldset>
+                    <label>* E-mail:</label>
+                    <input class="formContactmandatory" id="emailobj" name="email" onblur="fieldVerification(this);" onfocus="cleanVerification(this);" type="text" />
+                    <span id="verificationResultemailobj"></span>
+                </fieldset>
+                <fieldset>
+                    <label>Telephone:</label>
+                    <input id="telephoneobj" onblur="fieldVerification(this);" onfocus="cleanVerification(this);" name="telephone" type="text" />
+                    <span id="verificationResulttelephoneobj"></span>
+                </fieldset>
+                <fieldset>
+                    <label>* Message:</label><br/>
+                    <textarea class="formContactmandatory" id="messageobj" onblur="fieldVerification(this);" onfocus="cleanVerification(this);" name="message"></textarea><br/>
+                    <span id="verificationResultmessageobj"></span>
+                </fieldset>
+                <input onclick="formVerification('formContact');" type="button" value="SEND" />
+                <input type="reset" value="RESET" />
+            </form>
+        </div>
+    </body>
+</html>
